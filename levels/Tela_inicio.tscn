@@ -1,0 +1,95 @@
+[gd_scene load_steps=7 format=3 uid="uid://b8vir6ii3xitn"]
+
+[ext_resource type="Texture2D" uid="uid://cv8naxtjlhwkt" path="res://assetsGames/Seasonal Tilesets/1 - Grassland/Background parts/_Complete_static_BG_(288 x 208).png" id="1_wikhy"]
+[ext_resource type="Texture2D" uid="uid://cua1gvq5g5d0l" path="res://assetsGames/Sprite Pack 2/2 - Mr. Mochi/Hurt (32 x 32).png" id="2_h7ovf"]
+
+[sub_resource type="Theme" id="Theme_dnqke"]
+
+[sub_resource type="FontFile" id="FontFile_rprfv"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[sub_resource type="Theme" id="Theme_kgr5v"]
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/fonts/font = SubResource("FontFile_rprfv")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_p7jts"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_horizontal_guides_ = [32.0]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="bg" type="TextureRect" parent="MarginContainer"]
+layout_mode = 2
+texture = ExtResource("1_wikhy")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/bg"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/bg/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+
+[node name="Logo_game" type="TextureRect" parent="MarginContainer/bg/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="creditos" type="Button" parent="MarginContainer/bg/HBoxContainer/VBoxContainer/Logo_game"]
+layout_mode = 0
+offset_left = 536.0
+offset_top = 344.0
+offset_right = 609.0
+offset_bottom = 375.0
+theme = SubResource("Theme_dnqke")
+text = "Creditos"
+
+[node name="start" type="Button" parent="MarginContainer/bg/HBoxContainer/VBoxContainer/Logo_game"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 344.0
+offset_right = 516.0
+offset_bottom = 375.0
+theme = SubResource("Theme_kgr5v")
+button_mask = 0
+text = "Start"
+
+[node name="sair" type="Button" parent="MarginContainer/bg/HBoxContainer/VBoxContainer/Logo_game"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 640.0
+offset_top = 352.0
+offset_right = 682.0
+offset_bottom = 383.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Sair"
+icon = SubResource("ViewportTexture_p7jts")
+
+[node name="personagem" type="TextureRect" parent="MarginContainer/bg/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_h7ovf")
+expand_mode = 5
+flip_h = true

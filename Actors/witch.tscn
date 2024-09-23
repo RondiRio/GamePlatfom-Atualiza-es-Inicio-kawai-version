@@ -1,0 +1,165 @@
+[gd_scene load_steps=9 format=3 uid="uid://ukqmy2yu2yo6"]
+
+[ext_resource type="Script" path="res://Actors/witch.gd" id="1_l24kk"]
+[ext_resource type="Texture2D" uid="uid://c7kxd15t1qywg" path="res://assetsGames/Sprite Pack 5/2 - Lil Wiz/Idle_(32 x 32).png" id="1_vvuqc"]
+[ext_resource type="Texture2D" uid="uid://vm5iotwg62jf" path="res://assetsGames/Sprite Pack 5/2 - Lil Wiz/Running_(32 x 32).png" id="2_h717m"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_obkly"]
+
+[sub_resource type="Animation" id="Animation_0cy5v"]
+resource_name = "idle"
+length = 0.3
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("texture:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.466667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_vvuqc")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("texture:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [5]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("texture:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(-0.00407368, 0.0332333, 0.0665667, 0.0999, 0.1332, 0.1998, 5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 3, 4, 4]
+}
+
+[sub_resource type="Animation" id="Animation_c4ld6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("texture:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_vvuqc")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("texture:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [5]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("texture:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+
+[sub_resource type="Animation" id="Animation_htqf7"]
+resource_name = "run"
+length = 1.64
+loop_mode = 1
+step = 1.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("texture:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.466667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_h717m")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("texture:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [6]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("texture:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2997, 0.6889, 1, 1.333, 1.6327),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 4, 5, 5]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jh8q1"]
+_data = {
+"RESET": SubResource("Animation_c4ld6"),
+"idle": SubResource("Animation_0cy5v"),
+"run": SubResource("Animation_htqf7")
+}
+
+[node name="witch" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_l24kk")
+
+[node name="collision" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(185, 69)
+shape = SubResource("CapsuleShape2D_obkly")
+
+[node name="texture" type="Sprite2D" parent="."]
+position = Vector2(186, 65)
+texture = ExtResource("1_vvuqc")
+hframes = 5
+frame = 4
+
+[node name="anim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_jh8q1")
+}
+autoplay = "run"
+speed_scale = 1.557
+
+[node name="wall_detector" type="RayCast2D" parent="."]
+z_index = 1
+position = Vector2(-33, -3)
+target_position = Vector2(-8, 0)
+collision_mask = 10

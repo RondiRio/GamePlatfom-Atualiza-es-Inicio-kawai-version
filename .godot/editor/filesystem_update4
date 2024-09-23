@@ -1,0 +1,7 @@
+res://levels/world_01.tscn
+res://Actors/enemy_ronda.tscn
+res://Actors/player.tscn
+res://scripts/player.gd
+res://scripts/enemy_ronda.gd
+res://levels/pause_menu.tscn
+res://levels/pause_menu.tres
