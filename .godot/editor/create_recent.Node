@@ -1,5 +1,14 @@
-RayCast2D
-Node2D
-RemoteTransform2D
+Label
+TextureRect
+HBoxContainer
+MarginContainer
+Control
+CanvasLayer
 CollisionShape2D
+RigidBody2D
+Marker2D
+Node2D
 Area2D
+VisibleOnScreenNotifier2D
+Sprite2D
+AnimationPlayer
