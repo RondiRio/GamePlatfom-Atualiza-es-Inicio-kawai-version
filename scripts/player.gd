@@ -109,3 +109,13 @@ func take_damage(knockback_force := Vector2.ZERO, duration := 0.25):
 		knockback_tween.tween_property(self, "knockback_vector", Vector2.ZERO, duration)
 		animation.modulate = Color(1,0,0,1)
 		knockback_tween.tween_property(animation, "modulate", Color(1,1,1,1), duration)
+
+
+func _on_head_collider_body_entered(body: Node2D) -> void:
+	if body.has_method("break_sprite"):
+		body.hitpoints -= 1
+		if body.hitpoints < 0:
+			body.break_sprite()
+		else:
+			body.animation_player.play("hit")
+			#body.create_coin()

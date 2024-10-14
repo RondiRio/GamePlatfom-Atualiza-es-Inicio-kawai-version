@@ -1,0 +1,13 @@
+res://Actors/enemy_ronda.tscn::a329b075bf3be25ac2eaa2c8e1895d95::1727964314::res://.godot/exported/133200997/export-5eab2c1511d18f1403fa95fae8287d0a-enemy_ronda.scn
+res://Actors/player.tscn::adaac2ae33d106d109976f1ea7466da1::1727997435::res://.godot/exported/133200997/export-33c4e5bc2f66bfcd59d450d3231cbdb8-player.scn
+res://Actors/witch.tscn::3e8f7f1d4bfed8af943b97589f01bbac::1727131994::res://.godot/exported/133200997/export-439ca0939381ee156b8ec1ef26d0f1c8-witch.scn
+res://levels/pause_menu.tres::e51a09b774a1b96a2a69404f3cd3445a::1727964314::res://.godot/exported/133200997/export-ce842099cf65658de08e475b6e48184b-pause_menu.res
+res://levels/pause_menu.tscn::a6d99b1ed7f5178d619b142224b4fba6::1727879382::res://.godot/exported/133200997/export-155dd1099ceed4089d5f805f73190481-pause_menu.scn
+res://levels/Tela_inicio.tscn::0e630404e6789ba81a825a8f413c7d46::1727132023::res://.godot/exported/133200997/export-ad4ded4f2557898d6f1db845ac9938d5-Tela_inicio.scn
+res://levels/world_01.tscn::585ed4f123d1f3d00ee4963e4749a01a::1727997434::res://.godot/exported/133200997/export-bde9b0b2529c5f41f8c8416b7a30fd64-world_01.scn
+res://prefabs/coins.tscn::130ba0b7735da2ff8fc8a3a96defd22a::1727132024::res://.godot/exported/133200997/export-3d9079c73faa964483649dcb97900bdc-coins.scn
+res://prefabs/hitbox.tscn::5fc69ae53a6a65745a929bdec1fc63c6::1727132024::res://.godot/exported/133200997/export-5e61a6088dbfe8a801584a03fb1f0aa8-hitbox.scn
+res://prefabs/moving_platform.tscn::cfee6c82eb658aeb726db14a34adba2e::1727132024::res://.godot/exported/133200997/export-b8b4dc3182f88a6c2aaba450ed03da50-moving_platform.scn
+res://prefabs/box_pieces.tscn::ccbc2b7d0f4a5a00bb4f279049fbad71::1727970667::res://.godot/exported/133200997/export-d088e30657af1788143c74091958b18d-box_pieces.scn
+res://prefabs/break_box.tscn::604287aae8ba4f2b0aa714474da13b94::1727997434::res://.godot/exported/133200997/export-2f9be4c863036b3a1d8f6a066dbc3422-break_box.scn
+res://prefabs/coin_ridig.tscn::6ee2acb95cb35af8baab8ee2a1f41662::1727997434::res://.godot/exported/133200997/export-0e096b9ee2b06a8dde371ec401e4a805-coin_ridig.scn
