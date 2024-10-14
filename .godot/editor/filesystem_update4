@@ -3,3 +3,9 @@ res://levels/pause_menu.tres
 res://prefabs/break_box.tscn
 res://prefabs/coin_ridig.tscn
 res://Actors/player.tscn
+res://Actors/enemy_ronda.tscn
+res://scripts/globals.gd
+res://scripts/enemy_ronda.gd
+res://scripts/hud_manager.gd
+res://scripts/player.gd
+res://scripts/world_01.gd

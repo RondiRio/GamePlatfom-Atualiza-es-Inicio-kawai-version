@@ -11,12 +11,14 @@ var jump_count := 0
 var boost_active := false
 var cooldown := 0.0
 var debuff_active := false
-var player_life := 10
+#var player_life := 10
 var knockback_vector := Vector2.ZERO
 var respawn_position := Vector2(100, 100) 
 var respawn_time := 3.0  
 @onready var animation := $anim as AnimatedSprite2D
 @onready var remote_transform := $remote as RemoteTransform2D
+
+signal player_has_die()
 func _physics_process(delta: float) -> void:
 	if cooldown > 0:
 		cooldown -= delta
@@ -79,9 +81,10 @@ func _apply_debuff() -> void:
 	debuff_active = true
 
 func _on_hurtbox_body_entered(body: Node2D) -> void:
-	if player_life <= 0:
+	if globals.player_life == 0:
 		queue_free()  # Destrói o player temporariamente
-		await _Respaw_temporário()  # Chama a função de respawn
+		emit_signal("player_has_die")
+		#await _Respaw_temporário()  # Chama a função de respawn
 	else:
 		if $ray_rigth.is_colliding():
 			take_damage(Vector2(-200, -200))
@@ -90,7 +93,7 @@ func _on_hurtbox_body_entered(body: Node2D) -> void:
 
 func _Respaw_temporário() -> void:
 	await get_tree().create_timer(respawn_time).timeout  # Espera o tempo de respawn
-	player_life = 10  # Restaura a vida
+	globals.player_life = 3  # Restaura a vida
 	position = respawn_position  # Move o jogador para a posição de respawn
 	show()  # Mostra o jogador novamente se estiver oculto
 	knockback_vector = Vector2.ZERO  # Reseta o vetor de knockback
@@ -100,7 +103,7 @@ func follow_camera(camera: Camera2D) -> void:
 	remote_transform.remote_path = camera_path
 
 func take_damage(knockback_force := Vector2.ZERO, duration := 0.25):
-	player_life -= 1
+	globals.player_life -= 1
 	
 	if knockback_force != Vector2.ZERO:
 		knockback_vector = knockback_force
