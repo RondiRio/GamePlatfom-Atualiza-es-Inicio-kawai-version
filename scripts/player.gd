@@ -61,6 +61,11 @@ func _physics_process(delta: float) -> void:
 		velocity = knockback_vector
 		
 	move_and_slide()
+	
+	for platforms in get_slide_collision_count():
+		var collision = get_slide_collision(platforms)
+		if collision.get_collider().has_method("has_collided_with"):
+			collision.get_collider().has_collided_with(collision, self)
 
 	# Verifica se a habilidade de boost foi ativada
 	if Input.is_action_just_pressed("ui_up"):
@@ -77,6 +82,9 @@ func _activate_speed_boost() -> void:
 
 func _apply_debuff() -> void:
 	debuff_active = true
+
+
+
 
 func _on_hurtbox_body_entered(body: Node2D) -> void:
 	if player_life <= 0:
@@ -118,4 +126,4 @@ func _on_head_collider_body_entered(body: Node2D) -> void:
 			body.break_sprite()
 		else:
 			body.animation_player.play("hit")
-			#body.create_coin()
+			body.create_coin()

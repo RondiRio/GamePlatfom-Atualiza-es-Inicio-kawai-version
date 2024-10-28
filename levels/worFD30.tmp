@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://bgg1hecu84ml6"]
+[gd_scene load_steps=36 format=3 uid="uid://bgg1hecu84ml6"]
 
 [ext_resource type="Texture2D" uid="uid://cnt5lkgpmow08" path="res://assets/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="1_saulx"]
 [ext_resource type="Script" path="res://scripts/world_01.gd" id="1_ua0j5"]
@@ -25,7 +25,6 @@
 [ext_resource type="Texture2D" uid="uid://dn4vcy65s8hmt" path="res://assets/Mini FX, Items & UI/Common Pick-ups/Coin-Sprites/02_Coin-Sprites.png" id="20_vv4wm"]
 [ext_resource type="Texture2D" uid="uid://bstuh08nhmt8u" path="res://assets/Mini FX, Items & UI/Common Pick-ups/Coin-Sprites/03_Coin-Sprites.png" id="21_3p2yv"]
 [ext_resource type="FontFile" uid="uid://qxjrw5bomci6" path="res://assets/fonts/alagard.ttf" id="22_ncapa"]
-[ext_resource type="Texture2D" uid="uid://bgm2b4x0mjuk7" path="res://assets/Mini FX, Items & UI/Common Pick-ups/Health_Kit (16 x 16).png" id="26_8udhc"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lkoit"]
 shader = ExtResource("11_q8eam")
@@ -319,17 +318,17 @@ visible = false
 [node name="Falling_Platform" type="Node" parent="."]
 
 [node name="falling_platfrom" parent="Falling_Platform" instance=ExtResource("2_y5lt0")]
-position = Vector2(107, 575)
+position = Vector2(109, 575)
 rotation = -0.000654217
 scale = Vector2(1.02291, 0.902786)
 
 [node name="falling_platfrom2" parent="Falling_Platform" instance=ExtResource("2_y5lt0")]
-position = Vector2(150, 533)
+position = Vector2(107, 542)
 rotation = -0.000654217
 scale = Vector2(1.02291, 0.902786)
 
 [node name="falling_platfrom3" parent="Falling_Platform" instance=ExtResource("2_y5lt0")]
-position = Vector2(200, 501)
+position = Vector2(107, 511)
 rotation = -0.000654217
 scale = Vector2(1.02291, 0.902786)
 
@@ -377,7 +376,7 @@ texture = ExtResource("9_klpy7")
 centered = false
 
 [node name="player" parent="." instance=ExtResource("8_3rnrq")]
-position = Vector2(-23.4597, 5)
+position = Vector2(-42.8395, -1)
 
 [node name="camera" type="Camera2D" parent="."]
 position = Vector2(137, 92)
@@ -431,7 +430,7 @@ texture = ExtResource("11_i74cs")
 centered = false
 
 [node name="level 1" type="TileMap" parent="."]
-position = Vector2(1.01999, 1.00001)
+position = Vector2(355.976, 82)
 scale = Vector2(1, 0.991864)
 tile_set = SubResource("TileSet_nf3br")
 format = 2
@@ -679,7 +678,7 @@ position = Vector2(1011, -250)
 position = Vector2(500, -249)
 
 [node name="moving_platform2" parent="level 1/plataformas" instance=ExtResource("5_8j50g")]
-position = Vector2(1697.24, -8.0656)
+position = Vector2(1697, -8)
 move_speed = 5.0
 distance = 198
 move_horizontal = false
@@ -849,17 +848,17 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
 
-[node name="life_icon" type="TextureRect" parent="CanvasLayer/control/container/life_container"]
+[node name="coins_icons" type="TextureRect" parent="CanvasLayer/control/container/life_container"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
-texture = ExtResource("26_8udhc")
+texture = SubResource("AnimatedTexture_ucdlk")
 
-[node name="life_counter" type="Label" parent="CanvasLayer/control/container/life_container"]
+[node name="coins_counter" type="Label" parent="CanvasLayer/control/container/life_container"]
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 4
 theme_override_fonts/font = ExtResource("22_ncapa")
 theme_override_font_sizes/font_size = 16
-text = "3 X"
+text = "0000"
 vertical_alignment = 1

@@ -207,7 +207,7 @@ autoplay = "walk"
 
 [node name="wall_detector" type="RayCast2D" parent="."]
 physics_interpolation_mode = 1
-position = Vector2(-2, -7)
+position = Vector2(-1, -4)
 exclude_parent = false
 target_position = Vector2(-10, 0)
 hit_from_inside = true
