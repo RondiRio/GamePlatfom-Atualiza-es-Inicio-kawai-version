@@ -10,16 +10,16 @@ const coin_instance = preload("res://prefabs/coin_ridig.tscn")
 var impulse := 90
 
 func break_sprite():
-	for piece in pieces.size():
+	for piece in pieces:
 		var pieces_instance = box_pieces.instantiate()
 		get_parent().add_child(pieces_instance)
-		pieces_instance.get_node("texture").texture = load(pieces[piece])
+		pieces_instance.get_node("texture").texture = load(piece)
 		pieces_instance.global_position = global_position
 		pieces_instance.apply_impulse(Vector2(randi_range(-impulse, impulse), randi_range(-impulse, impulse)))
 	queue_free()
 
 func create_coin():
 	var coin = coin_instance.instantiate()
-	get_parent().call_deferred("add_child", coin)
+	get_parent().add_child(coin)  # Adiciona diretamente, sem call_deferred
 	coin.global_position = spawn_coin.global_position
-	coin.apply_impulse(Vector2(randi_range(-50,50), -150))
+	coin.apply_impulse(Vector2(randi_range(-50, 50), -150))  # Aplica o impulso corretamente

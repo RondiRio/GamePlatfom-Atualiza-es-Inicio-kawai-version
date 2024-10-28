@@ -1,5 +1,3 @@
 res://levels/world_01.tscn
 res://levels/pause_menu.tres
-res://prefabs/break_box.tscn
-res://prefabs/coin_ridig.tscn
-res://Actors/player.tscn
+res://scripts/enemy_ronda.gd

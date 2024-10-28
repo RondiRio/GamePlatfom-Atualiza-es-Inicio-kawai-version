@@ -1,0 +1,68 @@
+[gd_scene load_steps=7 format=3 uid="uid://dfmbkxxino6uu"]
+
+[ext_resource type="Texture2D" uid="uid://dw8wpo1psyn44" path="res://assets/Seasonal Tilesets/blocks to break/falling-platform-green.png" id="1_gq0pn"]
+[ext_resource type="Script" path="res://scripts/falling_platfrom.gd" id="1_mp17f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yhcr5"]
+size = Vector2(32, 16)
+
+[sub_resource type="Animation" id="Animation_sov5d"]
+resource_name = "shake"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("texture:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-2, 2), Vector2(0, 2), Vector2(-2, 2), Vector2(-4, 2), Vector2(-2, 2)]
+}
+
+[sub_resource type="Animation" id="Animation_nefmu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("texture:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2, 2)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m2kfi"]
+_data = {
+"RESET": SubResource("Animation_nefmu"),
+"shake": SubResource("Animation_sov5d")
+}
+
+[node name="falling_platfrom" type="AnimatableBody2D"]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_mp17f")
+
+[node name="texture" type="Sprite2D" parent="."]
+position = Vector2(-2, 2)
+texture = ExtResource("1_gq0pn")
+
+[node name="collision" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 2)
+shape = SubResource("RectangleShape2D_yhcr5")
+one_way_collision = true
+
+[node name="respawn_timer" type="Timer" parent="."]
+
+[node name="animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_m2kfi")
+}
+
+[connection signal="timeout" from="respawn_timer" to="." method="_on_respawn_timer_timeout"]
+[connection signal="animation_finished" from="animation" to="." method="_on_animation_animation_finished"]
