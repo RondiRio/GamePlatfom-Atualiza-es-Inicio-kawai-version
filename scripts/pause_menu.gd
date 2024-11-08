@@ -1,16 +1,21 @@
 extends CanvasLayer
 
 @onready var resume_btn = $menu_holder/resume_btn
+@onready var restart: Button = $menu_holder/restart
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	visible = false
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
 
+# Função para reiniciar o jogo
+func restart_game():
+	# Verifique se `reload_game` existe em um nó principal ou global
+	if has_node("/root/Main") and get_node("/root/Main").has_method("reload_game"):
+		get_node("/root/Main").reload_game()
+	else:
+		print("Erro: reload_game não encontrado no nó principal.")
 
 func _unhandled_input(event):
 	if event.is_action_pressed("ui_cancel"):
@@ -21,7 +26,6 @@ func _unhandled_input(event):
 func _on_resume_btn_pressed():
 	get_tree().paused = false
 	visible = false
-	
 	
 func _on_quit_btn_pressed():
 	get_tree().quit()

@@ -40,10 +40,17 @@ theme = ExtResource("1_v8yxe")
 shortcut = SubResource("Shortcut_4nf58")
 text = "CONTINUAR O JOGO"
 
+[node name="restart" type="Button" parent="menu_holder"]
+layout_mode = 2
+theme = ExtResource("1_v8yxe")
+text = "Reiniciar
+"
+
 [node name="quit_btn" type="Button" parent="menu_holder"]
 layout_mode = 2
 theme = ExtResource("1_v8yxe")
 text = "SAIR DO JOGO"
 
 [connection signal="pressed" from="menu_holder/resume_btn" to="." method="_on_resume_btn_pressed"]
+[connection signal="pressed" from="menu_holder/restart" to="." method="_on_quit_btn_pressed"]
 [connection signal="pressed" from="menu_holder/quit_btn" to="." method="_on_quit_btn_pressed"]

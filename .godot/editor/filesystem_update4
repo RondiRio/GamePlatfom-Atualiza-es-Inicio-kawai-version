@@ -1,5 +1,5 @@
 res://levels/world_01.tscn
 res://levels/pause_menu.tres
-res://prefabs/break_box.tscn
-res://prefabs/coin_ridig.tscn
-res://Actors/player.tscn
+res://prefabs/checkpoint.tscn
+res://levels/pause_menu.tscn
+res://scripts/player.gd

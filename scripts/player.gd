@@ -11,17 +11,24 @@ var jump_count := 0
 var boost_active := false
 var cooldown := 0.0
 var debuff_active := false
-var player_life := 10
+var player_life = globals.player_life
 var knockback_vector := Vector2.ZERO
 var respawn_position := Vector2(100, 100) 
 var respawn_time := 3.0  
+
+signal player_has_died
 @onready var animation := $anim as AnimatedSprite2D
 @onready var remote_transform := $remote as RemoteTransform2D
+
+
 func _physics_process(delta: float) -> void:
 	if cooldown > 0:
 		cooldown -= delta
 		if cooldown <= 0:
 			debuff_active = false  
+	
+	if Input.is_action_just_pressed("ui_text_backspace_word"):
+		_restart_game()
 	
 	# Lida com a gravidade.
 	if not is_on_floor():
@@ -61,6 +68,11 @@ func _physics_process(delta: float) -> void:
 		velocity = knockback_vector
 		
 	move_and_slide()
+	
+	for platforms in get_slide_collision_count():
+		var collision = get_slide_collision(platforms)
+		if collision.get_collider().has_method("has_collided_with"):
+			collision.get_collider().has_collided_with(collision, self)
 
 	# Verifica se a habilidade de boost foi ativada
 	if Input.is_action_just_pressed("ui_up"):
@@ -75,8 +87,14 @@ func _activate_speed_boost() -> void:
 	await get_tree().create_timer(BOOST_DURATION).timeout
 	boost_active = false
 
+func _restart_game() -> void:
+	get_tree().reload_current_scene()
+
 func _apply_debuff() -> void:
 	debuff_active = true
+
+
+
 
 func _on_hurtbox_body_entered(body: Node2D) -> void:
 	if player_life <= 0:
@@ -101,7 +119,11 @@ func follow_camera(camera: Camera2D) -> void:
 
 func take_damage(knockback_force := Vector2.ZERO, duration := 0.25):
 	player_life -= 1
-	
+	if player_life <= 0:
+		emit_signal("player_has_died")
+		queue_free()  # Remove o jogador da cena temporariamente
+		
+		
 	if knockback_force != Vector2.ZERO:
 		knockback_vector = knockback_force
 		
@@ -118,4 +140,4 @@ func _on_head_collider_body_entered(body: Node2D) -> void:
 			body.break_sprite()
 		else:
 			body.animation_player.play("hit")
-			#body.create_coin()
+			body.create_coin()
