@@ -11,13 +11,13 @@ var seconds = 0
 # Chamada automaticamente quando o nó entra na árvore
 func _ready():
 	coins_counter.text = str("%04d" % globals.coins)
-	score_counter.text = str("%06d" % globals.score)
+	#score_counter.text = str("%06d" % globals.score)
 	print(globals.score)
-	life_counter.text = str("%02d" % globals.player_life)
-	timer_counter.text = str("%02d" % default_minutes) + ":" +  str("%02d" % defalt_seconds)
+	#life_counter.text = str("%02d" % globals.player_life)
+	#timer_counter.text = str("%02d" % default_minutes) + ":" +  str("%02d" % defalt_seconds)
 # Chamado a cada frame
 func _process(delta):
 	coins_counter.text = str("%04d" % globals.coins)
-	score_counter.text = str("%06d" % globals.score)
+	#score_counter.text = str("%06d" % globals.score)
 	#life_counter.text = str("%02d" % globals.player_life)
-	timer_counter.text = str("%02d" % default_minutes) + ":" +  str("%02d" % defalt_seconds)
+	#timer_counter.text = str("%02d" % default_minutes) + ":" +  str("%02d" % defalt_seconds)

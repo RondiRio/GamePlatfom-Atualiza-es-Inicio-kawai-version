@@ -1,39 +1,40 @@
-[gd_scene load_steps=47 format=3 uid="uid://dsf8660k32bcg"]
+[gd_scene load_steps=49 format=3 uid="uid://by46ar1aoa4ya"]
 
-[ext_resource type="Texture2D" uid="uid://cnt5lkgpmow08" path="res://assets/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="1_saulx"]
-[ext_resource type="Script" path="res://scripts/world_01.gd" id="1_ua0j5"]
-[ext_resource type="Texture2D" uid="uid://di7kpndeip4xx" path="res://assets/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png" id="2_mxc2e"]
-[ext_resource type="PackedScene" uid="uid://dfmbkxxino6uu" path="res://prefabs/falling_platfrom.tscn" id="2_y5lt0"]
-[ext_resource type="Texture2D" uid="uid://c0gyiwdnig0il" path="res://assets/Seasonal Tilesets/5 - Misc. universal tiles/House (112 x 96).png" id="3_1mibv"]
-[ext_resource type="Texture2D" uid="uid://colock0cugucw" path="res://assets/Seasonal Tilesets/5 - Misc. universal tiles/Lava_frames (16 x 32).png" id="4_4hgaw"]
-[ext_resource type="PackedScene" uid="uid://hkoplga8y68i" path="res://prefabs/falling_platfrom_brown.tscn" id="4_oluud"]
-[ext_resource type="PackedScene" uid="uid://byxwqmp3r0ms7" path="res://prefabs/moving_platform.tscn" id="5_8j50g"]
-[ext_resource type="PackedScene" uid="uid://cnxykue4tnkgh" path="res://prefabs/coins.tscn" id="6_n5dob"]
-[ext_resource type="PackedScene" uid="uid://brq7iydnfk32f" path="res://Actors/enemy_ronda.tscn" id="7_ai1x5"]
-[ext_resource type="Texture2D" uid="uid://pkfkaqimfo4s" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/5 - Sky_color.png" id="7_ion58"]
-[ext_resource type="PackedScene" uid="uid://dc474oplf21pn" path="res://Actors/player.tscn" id="8_3rnrq"]
-[ext_resource type="Texture2D" uid="uid://c1c2c80p28t5a" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/4 - Cloud_cover_2.png" id="8_xahf8"]
-[ext_resource type="Texture2D" uid="uid://c2t8lwsvq2m3" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/3 - Cloud_cover_1.png" id="9_klpy7"]
-[ext_resource type="PackedScene" uid="uid://bn4box2c3cra2" path="res://levels/pause_menu.tscn" id="9_l4ewy"]
-[ext_resource type="Texture2D" uid="uid://ci4pwvius0edc" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/2 - Hills.png" id="10_tw2vq"]
-[ext_resource type="Texture2D" uid="uid://bepxlim3isej5" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/1 - Foreground_scenery.png" id="11_i74cs"]
-[ext_resource type="Shader" path="res://shaders/movimentoNuvens.gdshader" id="11_q8eam"]
-[ext_resource type="PackedScene" uid="uid://dmyikt8dh7ruc" path="res://prefabs/break_box.tscn" id="17_abpo3"]
-[ext_resource type="PackedScene" uid="uid://dt7433y83xfsr" path="res://prefabs/checkpoint.tscn" id="17_o1mvp"]
-[ext_resource type="Texture2D" uid="uid://dgfvrh8yg3sch" path="res://assets/Mini FX, Items & UI/Common Pick-ups/Coin-Sprites/00_Coin-Sprites.png" id="18_vy5b8"]
-[ext_resource type="Texture2D" uid="uid://byt5ar30rr4lk" path="res://assets/Mini FX, Items & UI/Common Pick-ups/Coin-Sprites/01_Coin-Sprites.png" id="19_smknw"]
-[ext_resource type="Script" path="res://scripts/hud_manager.gd" id="20_bacpf"]
-[ext_resource type="Texture2D" uid="uid://dn4vcy65s8hmt" path="res://assets/Mini FX, Items & UI/Common Pick-ups/Coin-Sprites/02_Coin-Sprites.png" id="20_vv4wm"]
-[ext_resource type="Texture2D" uid="uid://bstuh08nhmt8u" path="res://assets/Mini FX, Items & UI/Common Pick-ups/Coin-Sprites/03_Coin-Sprites.png" id="21_3p2yv"]
-[ext_resource type="Texture2D" uid="uid://behiqpn1b77e3" path="res://assets/Sprite Pack 5/1 - Robo Retro/Flight_Ending_(32 x 32).png" id="26_g2ryl"]
-[ext_resource type="Script" path="res://scripts/warning_sign.gd" id="26_igva7"]
-[ext_resource type="PackedScene" uid="uid://pot7paxtg4ts" path="res://prefabs/goal.tscn" id="29_6bmom"]
-[ext_resource type="Script" path="res://scripts/transition.gd" id="30_2ts5n"]
-[ext_resource type="Shader" path="res://shaders/transition.gdshader" id="30_r6p15"]
-[ext_resource type="Script" path="res://scripts/color_rect.gd" id="31_u6ky5"]
+[ext_resource type="Script" path="res://scripts/world_01.gd" id="1_rxp5c"]
+[ext_resource type="PackedScene" uid="uid://dt7433y83xfsr" path="res://prefabs/checkpoint.tscn" id="2_dh1pc"]
+[ext_resource type="PackedScene" uid="uid://bn4box2c3cra2" path="res://levels/pause_menu.tscn" id="3_uaged"]
+[ext_resource type="PackedScene" uid="uid://dfmbkxxino6uu" path="res://prefabs/falling_platfrom.tscn" id="4_3o85c"]
+[ext_resource type="PackedScene" uid="uid://hkoplga8y68i" path="res://prefabs/falling_platfrom_brown.tscn" id="5_koplg"]
+[ext_resource type="PackedScene" uid="uid://dc474oplf21pn" path="res://Actors/player.tscn" id="6_3tkdh"]
+[ext_resource type="Texture2D" uid="uid://pkfkaqimfo4s" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/5 - Sky_color.png" id="7_c6phs"]
+[ext_resource type="Texture2D" uid="uid://c1c2c80p28t5a" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/4 - Cloud_cover_2.png" id="8_i7vmw"]
+[ext_resource type="Shader" path="res://shaders/movimentoNuvens.gdshader" id="9_i4bxt"]
+[ext_resource type="Texture2D" uid="uid://c2t8lwsvq2m3" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/3 - Cloud_cover_1.png" id="10_1vtxh"]
+[ext_resource type="Texture2D" uid="uid://ci4pwvius0edc" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/2 - Hills.png" id="11_lk1ah"]
+[ext_resource type="Texture2D" uid="uid://bepxlim3isej5" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/1 - Foreground_scenery.png" id="12_iafgb"]
+[ext_resource type="Texture2D" uid="uid://cnt5lkgpmow08" path="res://assets/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="13_52jsy"]
+[ext_resource type="Texture2D" uid="uid://di7kpndeip4xx" path="res://assets/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png" id="14_drvv7"]
+[ext_resource type="Texture2D" uid="uid://c0gyiwdnig0il" path="res://assets/Seasonal Tilesets/5 - Misc. universal tiles/House (112 x 96).png" id="15_70pi6"]
+[ext_resource type="Texture2D" uid="uid://colock0cugucw" path="res://assets/Seasonal Tilesets/5 - Misc. universal tiles/Lava_frames (16 x 32).png" id="16_iqdt6"]
+[ext_resource type="PackedScene" uid="uid://cnxykue4tnkgh" path="res://prefabs/coins.tscn" id="17_6p40m"]
+[ext_resource type="PackedScene" uid="uid://byxwqmp3r0ms7" path="res://prefabs/moving_platform.tscn" id="18_spuwq"]
+[ext_resource type="PackedScene" uid="uid://brq7iydnfk32f" path="res://Actors/enemy_ronda.tscn" id="19_jsjc8"]
+[ext_resource type="PackedScene" uid="uid://dmyikt8dh7ruc" path="res://prefabs/break_box.tscn" id="20_lp1ai"]
+[ext_resource type="Script" path="res://scripts/hud_manager.gd" id="21_3k6ca"]
+[ext_resource type="Texture2D" uid="uid://dgfvrh8yg3sch" path="res://assets/Mini FX, Items & UI/Common Pick-ups/Coin-Sprites/00_Coin-Sprites.png" id="22_mur53"]
+[ext_resource type="Texture2D" uid="uid://byt5ar30rr4lk" path="res://assets/Mini FX, Items & UI/Common Pick-ups/Coin-Sprites/01_Coin-Sprites.png" id="23_c46sn"]
+[ext_resource type="Texture2D" uid="uid://dn4vcy65s8hmt" path="res://assets/Mini FX, Items & UI/Common Pick-ups/Coin-Sprites/02_Coin-Sprites.png" id="24_6107j"]
+[ext_resource type="Texture2D" uid="uid://bstuh08nhmt8u" path="res://assets/Mini FX, Items & UI/Common Pick-ups/Coin-Sprites/03_Coin-Sprites.png" id="25_3pwoy"]
+[ext_resource type="Script" path="res://scripts/warning_sign.gd" id="26_65wk0"]
+[ext_resource type="Texture2D" uid="uid://behiqpn1b77e3" path="res://assets/Sprite Pack 5/1 - Robo Retro/Flight_Ending_(32 x 32).png" id="27_k2y1u"]
+[ext_resource type="Texture2D" uid="uid://k1gcw001nl04" path="res://assets/Seasonal Tilesets/5 - Misc. universal tiles/Spike.png" id="28_gr5ym"]
+[ext_resource type="PackedScene" uid="uid://pot7paxtg4ts" path="res://prefabs/goal.tscn" id="29_n102b"]
+[ext_resource type="Script" path="res://scripts/transition.gd" id="30_tmwlj"]
+[ext_resource type="Shader" path="res://shaders/transition.gdshader" id="31_mpxfv"]
+[ext_resource type="Script" path="res://scripts/color_rect.gd" id="32_y08gb"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lkoit"]
-shader = ExtResource("11_q8eam")
+shader = ExtResource("9_i4bxt")
 shader_parameter/move_speed = 0.01
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_nt5hk"]
@@ -46,7 +47,7 @@ tile_data = PackedInt32Array(0, 65537, 1)
 tile_data = PackedInt32Array(0, 327681, 1)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m7ibx"]
-texture = ExtResource("1_saulx")
+texture = ExtResource("13_52jsy")
 3:1/0 = 0
 3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:1/0 = 0
@@ -127,7 +128,7 @@ texture = ExtResource("1_saulx")
 4:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m3okc"]
-texture = ExtResource("2_mxc2e")
+texture = ExtResource("14_drvv7")
 5:1/size_in_atlas = Vector2i(3, 3)
 5:1/0 = 0
 9:1/size_in_atlas = Vector2i(3, 3)
@@ -155,7 +156,7 @@ texture = ExtResource("2_mxc2e")
 1:1/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cpvj1"]
-texture = ExtResource("3_1mibv")
+texture = ExtResource("15_70pi6")
 2:0/next_alternative_id = 2
 2:0/0 = 0
 3:0/next_alternative_id = 2
@@ -279,7 +280,7 @@ texture = ExtResource("3_1mibv")
 6:1/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ki57i"]
-texture = ExtResource("4_4hgaw")
+texture = ExtResource("16_iqdt6")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -303,20 +304,20 @@ pattern_2 = SubResource("TileMapPattern_sf5jc")
 [sub_resource type="AnimatedTexture" id="AnimatedTexture_ucdlk"]
 frames = 4
 speed_scale = 4.0
-frame_0/texture = ExtResource("18_vy5b8")
-frame_1/texture = ExtResource("19_smknw")
+frame_0/texture = ExtResource("22_mur53")
+frame_1/texture = ExtResource("23_c46sn")
 frame_1/duration = 1.0
-frame_2/texture = ExtResource("20_vv4wm")
+frame_2/texture = ExtResource("24_6107j")
 frame_2/duration = 1.0
-frame_3/texture = ExtResource("21_3p2yv")
+frame_3/texture = ExtResource("25_3pwoy")
 frame_3/duration = 1.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3avo5"]
-atlas = ExtResource("26_g2ryl")
+atlas = ExtResource("27_k2y1u")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iwv3q"]
-atlas = ExtResource("26_g2ryl")
+atlas = ExtResource("27_k2y1u")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vbqko"]
@@ -336,8 +337,11 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7iwis"]
 size = Vector2(24.4797, 22)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_piniw"]
+size = Vector2(1126.07, 8)
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_v21iy"]
-shader = ExtResource("30_r6p15")
+shader = ExtResource("31_mpxfv")
 shader_parameter/lines = 10.0
 shader_parameter/threshold = 0.0
 shader_parameter/line_color_a = Color(1, 1, 1, 1)
@@ -348,79 +352,79 @@ light_mask = 3
 visibility_layer = 3
 position = Vector2(29, 496)
 scale = Vector2(0.980403, 1)
-script = ExtResource("1_ua0j5")
+script = ExtResource("1_rxp5c")
 
-[node name="checkpoint" parent="." instance=ExtResource("17_o1mvp")]
+[node name="checkpoint" parent="." instance=ExtResource("2_dh1pc")]
 position = Vector2(1667.68, 112)
 scale = Vector2(1, 0.991864)
 
-[node name="pause_menu" parent="." instance=ExtResource("9_l4ewy")]
+[node name="pause_menu" parent="." instance=ExtResource("3_uaged")]
 visible = false
 
 [node name="Falling_Platform" type="Node" parent="."]
 
-[node name="falling_platfrom" parent="Falling_Platform" instance=ExtResource("2_y5lt0")]
+[node name="falling_platfrom" parent="Falling_Platform" instance=ExtResource("4_3o85c")]
 position = Vector2(107, 575)
 rotation = -0.000654217
 scale = Vector2(1.02291, 0.902786)
 
-[node name="falling_platfrom2" parent="Falling_Platform" instance=ExtResource("2_y5lt0")]
+[node name="falling_platfrom2" parent="Falling_Platform" instance=ExtResource("4_3o85c")]
 position = Vector2(150, 533)
 rotation = -0.000654217
 scale = Vector2(1.02291, 0.902786)
 
-[node name="falling_platfrom3" parent="Falling_Platform" instance=ExtResource("2_y5lt0")]
+[node name="falling_platfrom3" parent="Falling_Platform" instance=ExtResource("4_3o85c")]
 position = Vector2(200, 501)
 rotation = -0.000654217
 scale = Vector2(1.02291, 0.902786)
 
-[node name="falling_platfrom4" parent="Falling_Platform" instance=ExtResource("2_y5lt0")]
+[node name="falling_platfrom4" parent="Falling_Platform" instance=ExtResource("4_3o85c")]
 position = Vector2(892, 480)
 rotation = -0.000654217
 scale = Vector2(1.02291, 0.902786)
 
-[node name="falling_platfrom5" parent="Falling_Platform" instance=ExtResource("2_y5lt0")]
+[node name="falling_platfrom5" parent="Falling_Platform" instance=ExtResource("4_3o85c")]
 position = Vector2(1148, 467)
 rotation = -0.000654217
 scale = Vector2(1.02291, 0.902786)
 
-[node name="falling_platfrom6" parent="Falling_Platform" instance=ExtResource("2_y5lt0")]
+[node name="falling_platfrom6" parent="Falling_Platform" instance=ExtResource("4_3o85c")]
 position = Vector2(1444, 584)
 rotation = -0.000654217
 scale = Vector2(1.02291, 0.902786)
 
-[node name="falling_platfrom7" parent="Falling_Platform" instance=ExtResource("4_oluud")]
+[node name="falling_platfrom7" parent="Falling_Platform" instance=ExtResource("5_koplg")]
 position = Vector2(1021, 201)
 
-[node name="falling_platfrom8" parent="Falling_Platform" instance=ExtResource("4_oluud")]
+[node name="falling_platfrom8" parent="Falling_Platform" instance=ExtResource("5_koplg")]
 position = Vector2(1021, 142)
 
-[node name="falling_platfrom9" parent="Falling_Platform" instance=ExtResource("4_oluud")]
+[node name="falling_platfrom9" parent="Falling_Platform" instance=ExtResource("5_koplg")]
 position = Vector2(1303, 187)
 
-[node name="falling_platfrom10" parent="Falling_Platform" instance=ExtResource("4_oluud")]
+[node name="falling_platfrom10" parent="Falling_Platform" instance=ExtResource("5_koplg")]
 position = Vector2(1453, 186)
 
-[node name="falling_platfrom11" parent="Falling_Platform" instance=ExtResource("4_oluud")]
+[node name="falling_platfrom11" parent="Falling_Platform" instance=ExtResource("5_koplg")]
 position = Vector2(1392, 144)
 
-[node name="falling_platfrom12" parent="Falling_Platform" instance=ExtResource("4_oluud")]
+[node name="falling_platfrom12" parent="Falling_Platform" instance=ExtResource("5_koplg")]
 position = Vector2(2243, 614)
 
-[node name="falling_platfrom14" parent="Falling_Platform" instance=ExtResource("4_oluud")]
+[node name="falling_platfrom14" parent="Falling_Platform" instance=ExtResource("5_koplg")]
 position = Vector2(2481, 618)
 
-[node name="falling_platfrom16" parent="Falling_Platform" instance=ExtResource("4_oluud")]
+[node name="falling_platfrom16" parent="Falling_Platform" instance=ExtResource("5_koplg")]
 position = Vector2(2761, 616)
 
-[node name="falling_platfrom17" parent="Falling_Platform" instance=ExtResource("4_oluud")]
+[node name="falling_platfrom17" parent="Falling_Platform" instance=ExtResource("5_koplg")]
 position = Vector2(3066, 615)
 
-[node name="falling_platfrom18" parent="Falling_Platform" instance=ExtResource("4_oluud")]
+[node name="falling_platfrom18" parent="Falling_Platform" instance=ExtResource("5_koplg")]
 position = Vector2(2946, 616)
 
-[node name="player" parent="." instance=ExtResource("8_3rnrq")]
-position = Vector2(0.0199966, 7.62939e-06)
+[node name="player" parent="." instance=ExtResource("6_3tkdh")]
+position = Vector2(14356.3, -5.72205e-06)
 
 [node name="camera" type="Camera2D" parent="."]
 position = Vector2(137, 92)
@@ -438,7 +442,7 @@ motion_scale = Vector2(0.3, 1)
 [node name="textura" type="Sprite2D" parent="BG/05"]
 position = Vector2(0.666667, 12.3333)
 scale = Vector2(2.05779, 0.940705)
-texture = ExtResource("7_ion58")
+texture = ExtResource("7_c6phs")
 centered = false
 
 [node name="04" type="ParallaxLayer" parent="BG"]
@@ -449,7 +453,7 @@ motion_scale = Vector2(0.3, 1)
 [node name="textura" type="Sprite2D" parent="BG/04"]
 position = Vector2(2.33333, 11)
 scale = Vector2(2.052, 0.947115)
-texture = ExtResource("8_xahf8")
+texture = ExtResource("8_i7vmw")
 centered = false
 
 [node name="03" type="ParallaxLayer" parent="BG"]
@@ -462,7 +466,7 @@ texture_repeat = 2
 material = SubResource("ShaderMaterial_lkoit")
 position = Vector2(9, 12)
 scale = Vector2(2.0463, 0.942308)
-texture = ExtResource("9_klpy7")
+texture = ExtResource("10_1vtxh")
 centered = false
 
 [node name="02" type="ParallaxLayer" parent="BG"]
@@ -473,7 +477,7 @@ motion_scale = Vector2(0.6, 1)
 [node name="textura" type="Sprite2D" parent="BG/02"]
 position = Vector2(2.33333, 0.333333)
 scale = Vector2(2.052, 1)
-texture = ExtResource("10_tw2vq")
+texture = ExtResource("11_lk1ah")
 centered = false
 
 [node name="01" type="ParallaxLayer" parent="BG"]
@@ -484,7 +488,7 @@ motion_scale = Vector2(0.9, 1)
 [node name="textura" type="Sprite2D" parent="BG/01"]
 position = Vector2(2.33333, -0.333333)
 scale = Vector2(2.052, 1.034)
-texture = ExtResource("11_i74cs")
+texture = ExtResource("12_iafgb")
 centered = false
 
 [node name="level 1" type="TileMap" parent="."]
@@ -500,242 +504,242 @@ layer_1/tile_data = PackedInt32Array(327689, 65537, 1, 327701, 65537, 1, 327706,
 [node name="coins" type="Node2D" parent="level 1"]
 position = Vector2(269, 23)
 
-[node name="coins" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(1.29696, -15.9426)
 
-[node name="coins2" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins2" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(18.6368, -15.9426)
 
-[node name="coins3" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins3" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(35.9766, -15.9426)
 
-[node name="coins4" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins4" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(53.3164, -15.9426)
 
-[node name="coins5" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins5" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(70.6562, -15.9426)
 
-[node name="coins6" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins6" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(-259.8, -188.345)
 
-[node name="coins7" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins7" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(-179.221, -139.951)
 
-[node name="coins8" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins8" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(255.274, -128.861)
 
-[node name="coins9" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins9" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(272.614, -128.861)
 
-[node name="coins10" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins10" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(289.954, -128.861)
 
-[node name="coins11" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins11" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(307.293, -128.861)
 
-[node name="coins12" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins12" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(324.633, -128.861)
 
-[node name="coins73" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins73" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(341.973, -128.861)
 
-[node name="coins74" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins74" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(359.313, -128.861)
 
-[node name="coins13" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins13" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(461.312, -118.779)
 
-[node name="coins14" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins14" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(478.652, -118.779)
 
-[node name="coins15" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins15" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(495.991, -118.779)
 
-[node name="coins16" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins16" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(513.331, -118.779)
 
-[node name="coins17" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins17" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(530.671, -118.779)
 
-[node name="coins18" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins18" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(587, -161)
 
-[node name="coins19" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins19" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(606, -160)
 
-[node name="coins20" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins20" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(629, -162)
 
-[node name="coins21" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins21" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(651, -162)
 
-[node name="coins22" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins22" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(672, -162)
 
-[node name="coins23" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins23" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(716, -113)
 
-[node name="coins24" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins24" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(735, -113)
 
-[node name="coins25" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins25" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(756, -113)
 
-[node name="coins26" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins26" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(776, -113)
 
-[node name="coins27" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins27" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(796, -113)
 
-[node name="coins28" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins28" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(463, -288)
 
-[node name="coins29" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins29" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(481, -288)
 
-[node name="coins30" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins30" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(499, -288)
 
-[node name="coins31" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins31" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(518, -288)
 
-[node name="coins32" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins32" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(537, -288)
 
-[node name="coins33" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins33" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(556, -288)
 
-[node name="coins34" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins34" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(577, -288)
 
-[node name="coins35" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins35" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(599, -288)
 
-[node name="coins36" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins36" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(621, -288)
 
-[node name="coins37" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins37" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(640, -288)
 
-[node name="coins38" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins38" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(658, -286.992)
 
-[node name="coins39" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins39" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(678, -288)
 
-[node name="coins61" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins61" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(79, -294)
 
-[node name="coins62" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins62" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(97, -294)
 
-[node name="coins63" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins63" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(115, -294)
 
-[node name="coins64" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins64" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(134, -294)
 
-[node name="coins65" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins65" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(153, -294)
 
-[node name="coins66" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins66" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(172, -294)
 
-[node name="coins67" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins67" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(193, -294)
 
-[node name="coins68" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins68" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(215, -294)
 
-[node name="coins69" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins69" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(237, -294)
 
-[node name="coins70" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins70" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(256, -294)
 
-[node name="coins71" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins71" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(274, -294)
 
-[node name="coins72" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins72" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(294, -294)
 
-[node name="coins40" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins40" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(742, -292)
 
-[node name="coins41" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins41" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(743, -311)
 
-[node name="coins42" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins42" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(744, -328)
 
-[node name="coins43" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins43" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(743, -347)
 
-[node name="coins44" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins44" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(744, -365)
 
-[node name="coins45" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins45" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(742, -386)
 
-[node name="coins46" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins46" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(743, -406)
 
-[node name="coins47" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins47" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(743, -426)
 
-[node name="coins48" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins48" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(924.387, -118.779)
 
-[node name="coins49" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins49" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(941.726, -118.779)
 
-[node name="coins50" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins50" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(959.066, -118.779)
 
-[node name="coins51" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins51" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(976.406, -118.779)
 
-[node name="coins52" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins52" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(993.746, -118.779)
 
-[node name="coins53" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins53" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(1011.09, -118.779)
 
-[node name="coins54" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins54" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(1028.43, -118.779)
 
-[node name="coins55" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins55" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(1045.77, -118.779)
 
-[node name="coins56" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins56" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(923.367, -169.189)
 
-[node name="coins57" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins57" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(940.706, -169.189)
 
-[node name="coins58" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins58" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(958.046, -169.189)
 
-[node name="coins59" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins59" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(1102, -423)
 
-[node name="coins60" parent="level 1/coins" instance=ExtResource("6_n5dob")]
+[node name="coins60" parent="level 1/coins" instance=ExtResource("17_6p40m")]
 position = Vector2(1138, -423)
 
 [node name="plataformas" type="Node2D" parent="level 1"]
 position = Vector2(-1, 0)
 
-[node name="moving_platform3" parent="level 1/plataformas" instance=ExtResource("5_8j50g")]
+[node name="moving_platform3" parent="level 1/plataformas" instance=ExtResource("18_spuwq")]
 position = Vector2(281, -26)
 scale = Vector2(1, 0.989228)
 
-[node name="moving_platform" parent="level 1/plataformas" instance=ExtResource("5_8j50g")]
+[node name="moving_platform" parent="level 1/plataformas" instance=ExtResource("18_spuwq")]
 position = Vector2(1011, -250)
 
-[node name="moving_platform4" parent="level 1/plataformas" instance=ExtResource("5_8j50g")]
+[node name="moving_platform4" parent="level 1/plataformas" instance=ExtResource("18_spuwq")]
 position = Vector2(500, -249)
 
-[node name="moving_platform2" parent="level 1/plataformas" instance=ExtResource("5_8j50g")]
+[node name="moving_platform2" parent="level 1/plataformas" instance=ExtResource("18_spuwq")]
 position = Vector2(1697.24, -8.0656)
 move_speed = 5.0
 distance = 198
@@ -744,54 +748,54 @@ move_horizontal = false
 [node name="enemies" type="Node2D" parent="."]
 scale = Vector2(0.985535, 1)
 
-[node name="enemie1" parent="enemies" instance=ExtResource("7_ai1x5")]
+[node name="enemie1" parent="enemies" instance=ExtResource("19_jsjc8")]
 position = Vector2(619.941, 139)
 
-[node name="enemie6" parent="enemies" instance=ExtResource("7_ai1x5")]
+[node name="enemie6" parent="enemies" instance=ExtResource("19_jsjc8")]
 position = Vector2(398, 110)
 
-[node name="enemie2" parent="enemies" instance=ExtResource("7_ai1x5")]
+[node name="enemie2" parent="enemies" instance=ExtResource("19_jsjc8")]
 position = Vector2(1540.02, 110)
 
-[node name="enemie3" parent="enemies" instance=ExtResource("7_ai1x5")]
+[node name="enemie3" parent="enemies" instance=ExtResource("19_jsjc8")]
 position = Vector2(1493, -66)
 
-[node name="enemie4" parent="enemies" instance=ExtResource("7_ai1x5")]
+[node name="enemie4" parent="enemies" instance=ExtResource("19_jsjc8")]
 position = Vector2(1467, -257)
 
-[node name="enemie7" parent="enemies" instance=ExtResource("7_ai1x5")]
+[node name="enemie7" parent="enemies" instance=ExtResource("19_jsjc8")]
 position = Vector2(1467, -257)
 
-[node name="enemie5" parent="enemies" instance=ExtResource("7_ai1x5")]
+[node name="enemie5" parent="enemies" instance=ExtResource("19_jsjc8")]
 position = Vector2(203, 110)
 
-[node name="EnemyRonda" parent="enemies" instance=ExtResource("7_ai1x5")]
+[node name="EnemyRonda" parent="enemies" instance=ExtResource("19_jsjc8")]
 position = Vector2(938.576, 95)
 scale = Vector2(1.01468, 1)
 
 [node name="beak_boxes" type="Node2D" parent="."]
 
-[node name="break-box" parent="beak_boxes" instance=ExtResource("17_abpo3")]
+[node name="break-box" parent="beak_boxes" instance=ExtResource("20_lp1ai")]
 z_index = -1
 position = Vector2(289.677, -92)
 
-[node name="break-box4" parent="beak_boxes" instance=ExtResource("17_abpo3")]
+[node name="break-box4" parent="beak_boxes" instance=ExtResource("20_lp1ai")]
 z_index = -1
 position = Vector2(305.997, -92)
 
-[node name="break-box5" parent="beak_boxes" instance=ExtResource("17_abpo3")]
+[node name="break-box5" parent="beak_boxes" instance=ExtResource("20_lp1ai")]
 z_index = -1
 position = Vector2(322.316, -92)
 
-[node name="break-box6" parent="beak_boxes" instance=ExtResource("17_abpo3")]
+[node name="break-box6" parent="beak_boxes" instance=ExtResource("20_lp1ai")]
 z_index = -1
 position = Vector2(338.636, -92)
 
-[node name="break-box2" parent="beak_boxes" instance=ExtResource("17_abpo3")]
+[node name="break-box2" parent="beak_boxes" instance=ExtResource("20_lp1ai")]
 z_index = -1
 position = Vector2(298.857, 37)
 
-[node name="break-box3" parent="beak_boxes" instance=ExtResource("17_abpo3")]
+[node name="break-box3" parent="beak_boxes" instance=ExtResource("20_lp1ai")]
 z_index = -1
 position = Vector2(315.176, 37)
 
@@ -811,7 +815,7 @@ grow_vertical = 2
 rotation = -0.000654217
 scale = Vector2(1.02291, 0.902786)
 size_flags_horizontal = 3
-script = ExtResource("20_bacpf")
+script = ExtResource("21_3k6ca")
 
 [node name="container" type="MarginContainer" parent="CanvasLayer/control"]
 layout_mode = 1
@@ -849,7 +853,7 @@ theme_override_constants/outline_size = 4
 
 [node name="warning_sign" type="Node2D" parent="."]
 position = Vector2(105.059, 8)
-script = ExtResource("26_igva7")
+script = ExtResource("26_65wk0")
 
 [node name="texture" type="AnimatedSprite2D" parent="warning_sign"]
 position = Vector2(14.2799, 87)
@@ -867,12 +871,33 @@ position = Vector2(-67.3192, 93)
 scale = Vector2(0.999999, 0.999999)
 shape = SubResource("RectangleShape2D_7iwis")
 
-[node name="goal" parent="." instance=ExtResource("29_6bmom")]
+[node name="spikes_area" type="Area2D" parent="."]
+physics_interpolation_mode = 1
+z_index = 1
+z_as_relative = false
+y_sort_enabled = true
+position = Vector2(2712.15, 168)
+collision_layer = 7
+collision_mask = 7
+collision_priority = 5.0
+
+[node name="collision" type="CollisionShape2D" parent="spikes_area"]
+position = Vector2(-65.2793, 4)
+scale = Vector2(0.999999, 0.999999)
+shape = SubResource("RectangleShape2D_piniw")
+
+[node name="spikes" type="Sprite2D" parent="spikes_area"]
+texture_repeat = 2
+position = Vector2(-65.2793, 2)
+texture = ExtResource("28_gr5ym")
+region_enabled = true
+region_rect = Rect2(0, 8, 1128, 8)
+
+[node name="goal" parent="." instance=ExtResource("29_n102b")]
 position = Vector2(0, 57)
-next_level = "res://levels/Dark_Shadown.tscn"
 
 [node name="transition" type="CanvasLayer" parent="."]
-script = ExtResource("30_2ts5n")
+script = ExtResource("30_tmwlj")
 
 [node name="color_rect" type="ColorRect" parent="transition"]
 material = SubResource("ShaderMaterial_v21iy")
@@ -882,4 +907,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
-script = ExtResource("31_u6ky5")
+script = ExtResource("32_y08gb")
+
+[connection signal="body_shape_entered" from="spikes_area" to="." method="_on_spikes_area_body_shape_entered"]

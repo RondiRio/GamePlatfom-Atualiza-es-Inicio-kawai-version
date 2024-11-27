@@ -1,0 +1,6 @@
+Essa nova versão conta com Novo mundo (ainda a ser editado pelo nosso level desining), conta com um menu de restart ou quit do game.
+foram removidas as vidas do jogador, apenas hit kil. 
+Essa versao conta com uma parte baixa para os jogadores que acham que isso é dificil de mais.
+Conta com animação de troca de mundo
+conta com NPC para esplicar o game.
+conta com dialogo (apenas do NPC para o jogador.)

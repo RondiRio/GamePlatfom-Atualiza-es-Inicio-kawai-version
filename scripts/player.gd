@@ -98,7 +98,8 @@ func _apply_debuff() -> void:
 
 func _on_hurtbox_body_entered(body: Node2D) -> void:
 	if player_life <= 0:
-		queue_free()  # Destrói o player temporariamente
+		queue_free()
+		  # Destrói o player temporariamente
 		await _Respaw_temporário()  # Chama a função de respawn
 	else:
 		if $ray_rigth.is_colliding():
@@ -121,8 +122,8 @@ func take_damage(knockback_force := Vector2.ZERO, duration := 0.25):
 	player_life -= 1
 	if player_life <= 0:
 		emit_signal("player_has_died")
-		queue_free()  # Remove o jogador da cena temporariamente
 		
+		queue_free() # Remove o jogador da cena temporariamente
 		
 	if knockback_force != Vector2.ZERO:
 		knockback_vector = knockback_force
@@ -131,7 +132,8 @@ func take_damage(knockback_force := Vector2.ZERO, duration := 0.25):
 		knockback_tween.tween_property(self, "knockback_vector", Vector2.ZERO, duration)
 		animation.modulate = Color(1,0,0,1)
 		knockback_tween.tween_property(animation, "modulate", Color(1,1,1,1), duration)
-
+	game_over()
+	
 
 func _on_head_collider_body_entered(body: Node2D) -> void:
 	if body.has_method("break_sprite"):
@@ -141,3 +143,5 @@ func _on_head_collider_body_entered(body: Node2D) -> void:
 		else:
 			body.animation_player.play("hit")
 			body.create_coin()
+func game_over():
+	get_tree().change_scene_to_file("res://prefabs/game_over.tscn")
